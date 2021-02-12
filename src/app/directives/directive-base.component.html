@@ -1,0 +1,31 @@
+<div class="base-container">
+    <div>
+        <u>Simple directive</u>
+        <div prefix-stuff>
+            Color of this text changed by passing elementref in constructor
+        </div>
+    </div>
+    <div>
+        <u>Simple directive</u>
+        <div prefix-stuff>
+            Background color changed by usin rendere2 class
+        </div>
+    </div>
+    <div>
+        <u>Hostbinder and listener</u>
+        <div prefix-stuff>
+            On click background color is changed by hostlistner
+        </div>
+        
+    </div>
+    <div>
+        <u>Custom Structural Directive</u>
+        <div>
+            <button (click)="toggleDirective()">Toggle</button>
+        </div>
+        <div *Structdir="showDiv">
+            On click background color is changed by hostlistner
+        </div>
+        
+    </div>
+</div>

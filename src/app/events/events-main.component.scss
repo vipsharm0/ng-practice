@@ -1,0 +1,27 @@
+.event-container{
+    // border:1px solid black;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.base-container{
+    //border:1px solid black;
+    width: 90%;
+    margin: 20px auto;
+}
+.menu{
+    // border:1px solid gray;
+    width:20%;
+    float: left;
+}
+.main-frame{
+    padding:20px;    
+    width:80%;
+    // border:1px solid gray;
+    float: left;
+}
+
+.menu div:nth-child(n){
+    border: 1px solid gray;
+    padding: 5px;
+}

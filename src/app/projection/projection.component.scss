@@ -1,0 +1,16 @@
+.prj-container{
+    width:400px;
+    height:400px;
+    border:1px solid black;
+    margin: auto;
+    padding: 15px;
+}
+.projection-content{
+    border: 1px solid lightgray;
+    padding:5px;
+    margin: 20% auto;
+}
+
+.prj-container div:nth-of-type(n){
+    border: 1px solid lightgray;
+}

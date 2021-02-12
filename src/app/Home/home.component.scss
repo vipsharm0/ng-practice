@@ -1,0 +1,37 @@
+.welcome-msg h1{
+    float:right;
+}
+.welcome-msg{
+    padding: 0px 190px;
+    overflow: auto;
+}
+.home-container{
+    border:1px solid black;
+    padding: 20px 20px;
+    background-color: blanchedalmond;
+    overflow: auto;
+}
+
+.home-container div{
+    float: left;
+    border: 1px solid gray;
+}
+.home-container a{
+    background-color: lightblue;
+    padding: 15px;
+    text-decoration: none;
+    color:black;
+}
+.home-container div .active{
+    background-color: aquamarine;
+}
+.main-container{
+   width:90%;
+   margin: auto;
+}
+// .home-container{
+//     border:1px solid black;
+//     padding: 20px 20px;
+//     background-color: blanchedalmond;
+//     overflow: auto;
+// }

@@ -1,0 +1,17 @@
+<div class="ref-container">
+    <div class="ref-btn">
+        <button (click)="getTempRef(temp)">Click</button>
+        <div class="ref-c-btn">
+            <span *ngIf="inputText">Value by ref variable</span>
+            <div [style.margin-bottom.px]="10" >{{inputText}}</div>
+            <span *ngIf="inputText">Value by viewchild</span>
+            <div>{{tempText}}</div>
+        </div>
+    </div>
+    <div class="tempref">
+        <u>Template to refer</u>
+        <div class="input-box">
+            Input <input type="text" #temp>
+        </div>
+    </div>
+</div>

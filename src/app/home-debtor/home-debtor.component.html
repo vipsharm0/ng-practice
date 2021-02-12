@@ -1,0 +1,46 @@
+<ng-template #addressb let-cntxt let-n="cls">
+    <span [ngClass]="n">
+        Address-Book
+    </span>
+</ng-template>
+<div class="container-debtor">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Pending Amount</th>
+            <th scope="col">Due in</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dt of debtorlist?.debtors">
+            <td>{{dt.id}}</td>
+            <td>{{dt.name}}</td>
+            <td>{{dt.pending}}</td>
+            <td>{{dt.duedays}}</td>
+          </tr>
+        </tbody>
+      </table>    
+</div>
+<ng-container *ngTemplateOutlet="addressb; context: addrb"></ng-container>
+<div class="container-address">   
+    <table class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Area Code</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let add of addresslist">
+                <td>{{add.address.city}}</td>
+                <td>{{add.address.state}}</td>
+                <td>{{add.address.pincode}}</td>
+                <td>{{add.address.country}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

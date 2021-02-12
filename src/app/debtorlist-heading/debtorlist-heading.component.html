@@ -1,0 +1,10 @@
+<ng-content></ng-content>
+<h6 class="" *ngIf="dtLength < 4; then normal; else alarming">
+</h6>
+<ng-template #normal>
+    <div class="severity">Debtors list - Normal<span>{{': ' + dtLength}}</span></div>
+</ng-template>
+
+<ng-template #alarming>
+    <div class="alarming">Debtors list - Alarming<span>{{': ' + dtLength}}</span></div>
+</ng-template>

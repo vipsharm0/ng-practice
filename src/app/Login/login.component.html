@@ -1,0 +1,26 @@
+<div class="container">
+    <form #loginFrm="ngForm" (ngSubmit)="loginSubmit(loginFrm)">
+        <span *ngIf="uname.touched && uname.errors?.required">Name is required.</span> 
+        <div class="login-user">
+            <span>Username:</span>
+            <div class="login-user-inner">
+                <input id="usern" class="form-control" required name="username" #uname="ngModel"  [(ngModel)]="username">
+            </div>                   
+        </div>
+        <div class="login-password">
+            <span>Password:</span>
+            <div class="login-pass-inner">
+                <input id="password" class="form-control" type="password"  required name="password" #pwd="ngModel"  [(ngModel)]="password"></div>  
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success" [disabled]="!loginFrm.valid">Submit</button>
+        </div>
+    </form>
+</div>
+<div>
+    <ng-content></ng-content>
+</div>
+<!-- <ng-template #ref3></ng-template>
+<input type="text" class="form-control" [value]="a"> -->
+
+
