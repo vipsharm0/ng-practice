@@ -24,6 +24,8 @@ import { ProjectionChild } from './projection/projection-child/projection-child.
 import { DirectiveBase } from './directives/directive-base.component';
 import { DirectivePrefix } from './app-directives/prefix-stuff.directive';
 import { StructDir } from './app-directives/str-directive';
+import { BaseDynamic } from './dynamic/dynamic-base.component';
+import { DynamicMessage } from './dynamic/message/dynamic-message.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },  
@@ -37,6 +39,7 @@ const routes: Routes = [
         { path: 'localref', component: LocalRef},
         { path: 'Projection', component: ProjectionComponent},
         { path: 'Directives', component: DirectiveBase},
+        { path: 'Dynamic', component: BaseDynamic},
       ]}
 
 
@@ -62,7 +65,9 @@ const routes: Routes = [
     ProjectionChild,
     DirectiveBase,
     DirectivePrefix,
-    StructDir
+    StructDir,
+    BaseDynamic,
+    DynamicMessage
   ],
   imports: [
     BrowserModule,
@@ -73,6 +78,7 @@ const routes: Routes = [
   ],
   providers:[ServLogin, DebtorService],
   // providers: [ServLogin],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[DynamicMessage]
 })
 export class AppModule { }

@@ -26,4 +26,8 @@ export class EventsMain{
     directiveClick(){
         this.router.navigate(['Home/Events/Directives'])
     }
+    dynamiCompClick(){
+        this.router.navigate(['Home/Events/Dynamic'])
+        
+    }
 }

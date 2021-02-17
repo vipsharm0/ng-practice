@@ -1,0 +1,25 @@
+<div>
+    <button (click)="injectComponent()">Click to inject Component</button>
+</div>
+<div>
+    <button (click)="destroyComponent()">Click to destroy Component</button>
+</div>
+<div class="basediv">
+    <u>welcome user!</u>
+    <ng-container #idcontainer>
+        well
+    </ng-container>
+    <!-- <div #idcontainer>
+        well
+    </div> -->
+</div>
+
+<div>
+    <button (click)="injectEmbededView()">Click to inject Embeded view</button>
+</div>
+<div>
+    <button (click)="destroyComponent()">Click to destroy Embeded view</button>
+</div>
+<ng-template #template let-viewName="name">
+    <div>Hi, My name is {{viewName}}. I am a view created from a template</div>
+  </ng-template>
